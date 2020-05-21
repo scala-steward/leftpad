@@ -1,4 +1,4 @@
-## left-pad
+## leftpad
 
 String left pad heavily inspired by [left-pad](https://github.com/left-pad/left-pad/).
 
