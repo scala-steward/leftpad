@@ -19,7 +19,6 @@ ThisBuild / developers := List(
   )
 )
 
-ThisBuild / description := "leftpad"
 ThisBuild / licenses := List(
   "MIT License" -> url("https://www.opensource.org/licenses/mit-license")
 )
@@ -34,12 +33,14 @@ lazy val leftpad = (project in file("."))
 lazy val core = (project in file("modules/core"))
   .settings(
     name := "leftpad-core",
+    description := "leftpad core",
     libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.15.1" % "test"
   )
 
 lazy val refined = (project in file("modules/refined"))
   .settings(
     name := "leftpad-refined",
+    description := "leftpad refined",
     libraryDependencies += "eu.timepit" %% "refined" % "0.9.18"
   )
   .dependsOn(core)
