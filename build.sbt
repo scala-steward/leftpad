@@ -18,7 +18,6 @@ ThisBuild / developers := List(
     url = url("https://github.com/asakaev")
   )
 )
-
 ThisBuild / licenses := List(
   "MIT License" -> url("https://www.opensource.org/licenses/mit-license")
 )
@@ -28,6 +27,7 @@ ThisBuild / homepage := Some(url("https://github.com/asakaev/leftpad"))
 ThisBuild / pomIncludeRepository := (_ => false)
 
 lazy val leftpad = (project in file("."))
+  .settings(publish / skip := true)
   .aggregate(core, refined)
 
 lazy val core = (project in file("modules/core"))
