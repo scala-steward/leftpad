@@ -34,7 +34,7 @@ lazy val core = (project in file("modules/core"))
   .settings(
     name := "leftpad-core",
     description := "leftpad core",
-    libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.15.2" % "test"
+    libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.15.3" % "test"
   )
 
 lazy val refined = (project in file("modules/refined"))
